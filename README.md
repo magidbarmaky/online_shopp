@@ -1,11 +1,31 @@
-# online_shopp
-online shopp
+# Working with parse_web
+## 1.The first step is to set the url
 
-<div class="figure">
-  <img src="https://www.uplooder.net/img/image/52/277f19bfec716a15ef2aefe52d2237c5/Screenshot-(61).png"
-       alt="The head and torso of a dinosaur skeleton;
-            it has a large head with long sharp teeth"
-       width="700"
-       title = " SIP icon " 
-       height="400">
+```python
+import pars as pw
 
+url = pw.set_url("https://python.org")
+
+```
+## 2.The second step is to use methods
+
+### Get IP address:
+
+```python
+print(url.get_ip())
+
+```
+
+
+### Get ping site :
+
+```python
+print(url.ping()) # 109.55 
+
+```
+parameters :
+1- mode: The mod parameter can be equal to:
+min: Returns the lowest ping
+mid : Returns the average ping
+max: Returns the maximum ping.
+2- number : 
