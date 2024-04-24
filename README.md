@@ -74,6 +74,6 @@ print(url.css_code())
 
 **parameters :**
 1. `link_or_code`: The mod parameter can be equal to:
-  link: Returns a **list** of css links (default)
-  code : It returns a **dictionary** of css codes whose key is the css link and its value is the css code.
+  * link: Returns a **list** of css links (default)
+  * code : It returns a **dictionary** of css codes whose key is the css link and its value is the css code.
  
