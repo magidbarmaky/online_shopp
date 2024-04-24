@@ -172,3 +172,16 @@ print(url.tag('h1'))
 2. `attribute` :  is equal to the attribute in question ( defualt = None)
 
 Returns a list of the desired tags that have the given attribute.
+
+
+### Access to robots.txt:
+
+```python
+import pars_web as pw
+
+url = pw.set_url("https://python.org")
+
+print(url.robots())
+
+```
+If the robots.txt file is defined in the url, it returns it, otherwise it returns false.
