@@ -142,3 +142,33 @@ print(url.isit('python'))
 **parameters :**
 1. `word`:It is equal to the desired word, if the desired word exists in the url, it returns true and if it does not exist, it returns false.
 
+
+### is wordpress ? :
+
+```python
+import pars_web as pw
+
+url = pw.set_url("https://python.org")
+
+print(url.iswordpress())
+
+```
+If it is written with WordPress; Returns true otherwise returns false.
+
+
+### Find tags in url:
+
+```python
+import pars_web as pw
+
+url = pw.set_url("https://python.org")
+
+print(url.tag('h1'))
+
+```
+
+**parameters :**
+1. `tag` : It is equal to the desired tag that you want to extract from the url
+2. `attribute` :  is equal to the attribute in question ( defualt = None)
+
+Returns a list of the desired tags that have the given attribute.
