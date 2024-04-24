@@ -143,6 +143,20 @@ print(url.isit('python'))
 1. `word`:It is equal to the desired word, if the desired word exists in the url, it returns true and if it does not exist, it returns false.
 
 
+### Find  files in url:
+
+```python
+import pars_web as pw
+
+url = pw.set_url("https://python.org")
+
+print(url.find_file('.pdf' , '.ico' , '.png'))
+
+```
+
+**parameters :**
+1. `suffix`: A set of extensions (at least one extension); Suffixes can start with a dot or be written without a dot.
+
 ### is wordpress ? :
 
 ```python
