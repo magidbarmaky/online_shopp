@@ -127,3 +127,18 @@ print(url.technology())
 
 ```
 It returns the used technologies in the form of a dictionary.
+
+### Find a word in url:
+
+```python
+import pars_web as pw
+
+url = pw.set_url("https://python.org")
+
+print(url.isit('python'))
+
+```
+
+**parameters :**
+1. `word`:It is equal to the desired word, if the desired word exists in the url, it returns true and if it does not exist, it returns false.
+
