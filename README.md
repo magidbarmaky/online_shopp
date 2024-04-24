@@ -185,3 +185,15 @@ print(url.robots())
 
 ```
 If the robots.txt file is defined in the url, it returns it, otherwise it returns false.
+
+### return title :
+
+```python
+import pars_web as pw
+
+url = pw.set_url("https://python.org")
+
+print(url.title())
+
+```
+Returns the title of the site.
