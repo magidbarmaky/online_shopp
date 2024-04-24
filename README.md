@@ -101,3 +101,15 @@ print(url.social())
 
 ```
 It returns a dictionary whose key is the name of the social network and its value is the address of the social network
+
+### get Textual content :
+
+```python
+import pars_web as pw
+
+url = pw.set_url("https://python.org")
+
+print(url.text())
+
+```
+Returns the text content as str
