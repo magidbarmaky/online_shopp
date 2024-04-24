@@ -113,3 +113,17 @@ print(url.text())
 
 ```
 Returns the text content as str
+
+
+###  Technologies used  :
+
+```python
+import pars_web as pw
+
+url = pw.set_url("https://python.org")
+
+
+print(url.technology())
+
+```
+It returns the used technologies in the form of a dictionary.
