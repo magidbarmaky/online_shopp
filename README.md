@@ -11,7 +11,6 @@ print(url.get_ip())
 
 ```
 
-
 ### Get ping :
 
 ```python
@@ -76,4 +75,29 @@ print(url.css_code())
 1. `link_or_code`: The mod parameter can be equal to:
   * link: Returns a **list** of css links (default)
   * code : It returns a **dictionary** of css codes whose key is the css link and its value is the css code.
- 
+
+
+ ### Get information :
+
+```python
+import pars_web as pw
+
+url = pw.set_url("https://python.org")
+
+print(url.information())
+
+```
+Returns a list of whois information as str
+
+
+### social networks:
+
+```python
+import pars_web as pw
+
+url = pw.set_url("https://python.org")
+
+print(url.social())
+
+```
+It returns a dictionary whose key is the name of the social network and its value is the address of the social network
